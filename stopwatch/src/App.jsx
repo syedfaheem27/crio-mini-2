@@ -42,13 +42,10 @@ function App() {
   return (
     <>
       <h1>
-        A basic stopwatch
+        Stopwatch
       </h1>
       <div className="container">
-        <span className="label">Time: </span>
-        {hours > 0 && <span>{hours}</span>}
-        <span>{minutes}:</span>
-        <span>{seconds <= 9 ? `0${seconds}` : seconds}</span>
+        Time: {minutes}:{seconds <= 9 ? `0${seconds}` : seconds}
       </div>
       <button onClick={timer !== null ? handlePause : handleStart}>{timer !== null ? 'Stop' : 'Start'}</button>
       <button onClick={handleReset}>Reset</button>
