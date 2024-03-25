@@ -1,8 +1,11 @@
+import { useContext } from "react"
+import { ResultContext } from "../context/ResultContext"
 
 const Input = () => {
+    const { result } = useContext(ResultContext);
     return (
         <div className="input">
-            <span>%%INPUT%%</span>
+            <span>{result.input}</span>
         </div>
     )
 }

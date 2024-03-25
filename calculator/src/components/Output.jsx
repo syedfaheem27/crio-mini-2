@@ -1,12 +1,14 @@
+import { useContext } from "react"
+import { ResultContext } from "../context/ResultContext"
 
 const Output = () => {
-    return (
-        <div className="output">
-            <span>
-                %%OUTPUT%%
-            </span>
-        </div>
-    )
+    const { result } = useContext(ResultContext);
+    return <>
+        {
+            result && <div className="output">{`${result.output}`}</div>
+        }
+
+    </>
 }
 
 export default Output
