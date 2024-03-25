@@ -19,13 +19,15 @@ h1 {
 
 .input {
   width: 260px;
-  height: 45px;
   margin: 1rem auto;
   background-color: rgba(204, 204, 204, 0.224);
   color: black;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
   /* white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; */

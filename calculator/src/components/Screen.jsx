@@ -3,10 +3,10 @@ import { ResultContext } from "../context/ResultContext"
 
 const Input = () => {
     const { result } = useContext(ResultContext);
-    return (
-        <div className="input">
-            <span>{result.input}</span>
-        </div>
+    return (<>
+
+        <input type="text" className="input" value={result.input} />
+    </>
     )
 }
 
