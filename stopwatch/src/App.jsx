@@ -7,7 +7,7 @@ function App() {
 
   const seconds = timeElapsed % 60;
   const minutes = Math.floor(timeElapsed / 60) % 60;
-  const hours = Math.floor(timeElapsed / 3600) % 60;
+  // const hours = Math.floor(timeElapsed / 3600) % 60;
 
 
   const handleStart = () => {
@@ -21,13 +21,19 @@ function App() {
 
   const handlePause = () => {
     if (timer !== null) {
-      clearInterval(timer)
+      // clearInterval(timer)
+      //Either keep this piece of code and remove timer as a 
+      //dependency in useEffect or just remove this piece of code
+      //and useEffect would take care of the rest
       setTimer(null)
     }
   }
 
   const handleReset = () => {
-    clearInterval(timer);
+    // clearInterval(timer);
+    //Either keep this piece of code and remove timer as a
+    //dependency in useEffect or just remove this piece of code
+    //and useEffect would take care of the rest
     setTimer(null);
     setTimeElapsed(0)
   }
